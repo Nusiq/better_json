@@ -14,5 +14,5 @@ master_doc = "index"
 # This values are all used in the generated documentation.
 # Usually, the release and version are the same,
 # but sometimes we want to have the release have an "rc" tag.
-project = "json-encoders"
-author = "Artur"
+project = "better-json"
+author = "Artur D."

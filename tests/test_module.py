@@ -1,4 +1,4 @@
-from json_encoders import CompactEncoder
+from better_json import CompactEncoder
 import json
 
 def test_primitives():

@@ -1,22 +1,38 @@
 
-# json_encoders
+# Better JSON
+My set of tools for working with JSON that I used to constantly copy between
+my projects.
+
+# Modules
+## Compact encoder
 A simple python module that adds CompactEncoder class for better json
 formatting.
 
-## Info
-This module provides useful json class but its main purpose for me was to learn
-how to setup a python project with unittests supported byt `tox` and with
-automatically generated documentation using `sphinx`.
+# JSONC Decoder
+TODO
 
-Running the tests - execute command below in root directory:
+# JSON Walker
+TODO
+
+
+
+# Info about the project
+This module provides some tools to deal with JSON and JSONC more efficiently
+but its main purpose for me was to learn how to setup a python project with
+unittests supported by `tox` and with automatically generated documentation
+using `sphinx`.
+
+## Tests
+Execute command below in root directory:
 ```
 tox
 ```
-Additionally you can run `doctest` tests for `src/json_encoders/__init__.py`
-file by executing command below in `src/json_encoders` directory:
+Additionally you can run `doctest` tests for `src/better_json/__init__.py`
+file by executing command below in `src/better_json` directory:
 ```
 python -m doctest .\__init__.py
 ```
+
 ### Configuration files explained
 - `setup.cfg` is a configuration for `setup.py`.
 - `tox.ini` is `tox` configuration which creates one test environemnt and
@@ -30,10 +46,10 @@ excluded with `.gitignore`
 - All test functions should have name compliant to this patterns: `test_*` or
 `*_test`. It's required by `pytest`
 
-### Documentation
+## Documentation
 This code uses Github pages for documentation. The github pages code is
 a copy of `documentation/` directory moved to `gh-pages` branch. You
-can visit the documentation page at https://nusiq.github.io/json_encoders/ 
+can visit the documentation page at https://nusiq.github.io/better_json/ 
 Github pages link is automatically generated with this pattern:
 ```
 <USERNAME>.github.io/<REPOSITORY NAME>/
