@@ -1,20 +1,22 @@
 Better JSON
 ======================
 
-Module contents
----------------
+Thie module implements tools for that make working with JSON and JSONC files
+easier.
 
-.. automodule:: better_json.compact_encoder
-   :members:
-   :undoc-members:
-   :show-inheritance:
+Features
+--------
 
-.. automodule:: better_json.jsonc
-   :members:
-   :undoc-members:
-   :show-inheritance:
+- Easier access to fields in JSON objects thanks to JSON walkers
+- Loading JSONC files
+- Saving JSON files with nicer formatting than standard json module
 
-.. automodule:: better_json.json_walker
-   :members:
-   :undoc-members:
-   :show-inheritance:
+Table of contents
+-----------------
+
+.. toctree::
+   :maxdepth: 1
+
+   walkers
+   jsonc
+   compact_encoder
