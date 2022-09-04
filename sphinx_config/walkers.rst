@@ -10,11 +10,13 @@ Description
 easier without a need to constantly handle exceptions. You can simply provide
 full JSON path to the value you want and than check if it exists.
 
-They use the syntax to pathlib Path objects, they overload the division
+They use the syntax similar to pathlib Path objects, they overload the division
 (`/`) and integer division (`//`) operators to create paths.
 
-`/` is used to create simple paths, where the keys are either strings or
-integers (for accessing objects and arrays respectively).
+`/` is used to create simple paths, where the keys are either strings
+(for accessing objects) or integers (for accesing arrays) or :class:`JSONPath`
+objects which internally are just tuples of strings and integers representing
+a longer path.
 
 `//` is used to create split paths, when applied to a JSON walker, it creates
 a JSON split walker, which has a list of JSON walkers representing all of the
@@ -83,6 +85,9 @@ Code example
 
 Classes
 -------
+
+.. autoclass:: JSONPath
+   :members:
 
 .. autoclass:: JSONWalker
    :members:
