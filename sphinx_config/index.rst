@@ -1,5 +1,5 @@
-Better JSON
-======================
+Better JSON Tools
+=================
 
 Thie module implements tools for that make working with JSON and JSONC files
 easier.

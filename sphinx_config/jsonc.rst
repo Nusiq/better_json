@@ -1,14 +1,14 @@
 Decoding JSONC
 ==============
-Better JSON provides new ways of loading JSON files.
+Better JSON tools provide new ways of loading JSON files.
 
-.. automodule:: better_json
+.. automodule:: better_json_tools
    :members: load_jsonc
    :undoc-members:
    :show-inheritance:
 
 
-.. automodule:: better_json.jsonc
+.. automodule:: better_json_tools.jsonc
    :members: JSONCDecoder
    :undoc-members:
    :show-inheritance:

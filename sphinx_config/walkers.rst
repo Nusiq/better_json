@@ -1,6 +1,6 @@
 JSON Walkers
 ============
-.. currentmodule:: better_json.json_walker
+.. currentmodule:: better_json_tools.json_walker
 
 Description
 -----------
@@ -37,7 +37,7 @@ Code example
 
 .. code-block:: python
 
-    from better_json import JSONWalker
+    from better_json_tools import JSONWalker
 
     with open('file.json', 'r') as f:
         walker = JSONWalker.load(f)

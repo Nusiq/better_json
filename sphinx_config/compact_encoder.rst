@@ -1,7 +1,7 @@
 Formatted JSON output
 =====================
 
-.. automodule:: better_json.compact_encoder
+.. automodule:: better_json_tools.compact_encoder
    :members:
    :undoc-members:
    :show-inheritance:
