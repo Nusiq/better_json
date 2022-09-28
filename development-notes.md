@@ -50,3 +50,55 @@ As of the writing of this document `setuptools` uses `setup.cfg` and the
 moved to `pyproject.toml` file. Currently the `pyproject.toml` file only
 specifies that the project uses `setuptools` which is a default setting making
 this file redundant.
+
+# Building and publishing to PyPI
+Resources about packaging: https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+Update `build` (just in case)
+```
+python -m pip install --upgrade build
+```
+
+Build
+```
+python -m build
+```
+
+Update `twine` (just in case)
+```
+python3 -m pip install --upgrade twine
+```
+
+Upload either to test PyPI or to PyPI
+```
+# Test PyPI
+python3 -m twine upload --repository testpypi dist/*
+# PyPI
+python3 -m twine upload --repository pypi dist/*
+```
+The `testpypi` and `pypi` are defined in `~/.pypirc` file with API tokens from
+PyPi/TestPyPI.
+
+# Notes about *unusual* commit history of the project
+The project started with name `json-encoders` and it only had a single
+JSON encoder implementation (the CompactEncoder used in current version).
+At that point the module version was slightly above version 1.0.0.
+
+It wasn't imporant for me and I wanted to make a bigger project for JSON
+related stuff so I just renamed it to `better-json` and added new
+functionallity. After that change the version of the module was set to 2.0.0.
+The repository was also renamed to `better-json`.
+
+After polishing the project I decided to publish it on PyPI. The name wasn't
+available so the project was renamed once again to `better-json-tools`.
+I decided that since the project wasn't really properly published there it
+makes sense to use version 1.0.0 and it shouldn't cause many probles since
+most likely no one used the project. The version was set to 1.0.0.
+
+The project used to use git tags for versioning when it was called
+`better-json`. I renamed the tags so now they follow pattern
+`better-json-<semver>-OLD`. The `<semver>` tags may be used in the future
+for tagging versions of the package after renaming it to `better-json-tools`.
+
+Since the project has been published on PyPI I don't intend to rename it
+again. This was a weird thing to do from the beginning.
