@@ -43,3 +43,10 @@ command with the same comment as the main project. Example:
 git submodule foreach "git add -A"
 git submodule foreach "git commit -m 'Some comment.'"
 ```
+
+# Project configuration
+As of the writing of this document `setuptools` uses `setup.cfg` and the
+`pyproject.toml` is in beta. I expect that in the future everything will be
+moved to `pyproject.toml` file. Currently the `pyproject.toml` file only
+specifies that the project uses `setuptools` which is a default setting making
+this file redundant.
