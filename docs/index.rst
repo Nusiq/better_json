@@ -11,6 +11,25 @@ Features
 - Loading JSONC files
 - Saving JSON files with nicer formatting than standard json module
 
+Installation
+------------
+
+Better JSON tools package is hosted on PyPI and can be installed using pip:
+
+.. code-block:: bash
+
+   pip install better-json-tools
+
+PyPi page: https://pypi.org/project/better-json-tools/
+
+Source code
+-----------
+
+Source code is available on GitHub:
+
+https://github.com/Nusiq/better_json_tools
+
+
 Table of contents
 -----------------
 
