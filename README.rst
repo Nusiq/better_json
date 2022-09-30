@@ -1,8 +1,9 @@
-Better JSON Tools
-=================
 .. image:: https://readthedocs.org/projects/better-json-tools/badge/?version=latest
     :target: https://better-json-tools.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
+
+Better JSON Tools
+=================
 
 Python module that adds tools to make working with JSON data easier.
 
