@@ -12,7 +12,7 @@ Documentation
 
 If you're looking for documentation please visit:
 
-https://better-json-tools.readthedocs.io/en/latest/
+https://better-json-tools.readthedocs.io/en/stable/
 
 
 Installation
